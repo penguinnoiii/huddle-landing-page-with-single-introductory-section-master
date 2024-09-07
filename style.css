@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --primary-100: hsl(257, 40%, 49%);
+    --primary-200: hsl(300, 69%, 71%);
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background-image: url(./images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    background-color: var(--primary-100);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+    text-align: center;
+}
+
+h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 20rem;
+    margin: 20px;
+}
+
+.container div {
+    margin: 50px 0px;
+}
+
+.navbar img {
+    max-width: 125px;
+    float: inline-start;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content img {
+    max-width: 20rem;
+}
+
+.content p {
+    line-height: 1.6;
+}
+
+.button {
+    background-color: #fff;
+    color: var(--primary-100);
+    padding: 10px;
+    min-width: 13rem;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 3px 5px 2px #423a48;
+    margin-top: 2rem;
+}
+
+.button:hover {
+    background-color: var(--primary-200);
+    color: #fff;
+}
+
+@media only screen and (min-width: 800px) {
+    body {
+        background-image: url(./images/bg-desktop.svg);
+        background-size: 100vw 100vh;
+        text-align: left;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    .container {
+        max-width: 70rem;
+    }
+
+    .content {
+        flex-direction: row;
+        gap: 3rem;
+    }
+
+    .content img {
+        max-width: 35rem;
+    }
+
+    .text {
+        max-width: 35rem;
+    }
+
+    .button {
+        max-width: 15rem;
+    }
+}
